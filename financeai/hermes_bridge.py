@@ -1,7 +1,6 @@
 """Bridge to Hermes — sends scrambled queries to the Hermes CLI."""
 
 import subprocess
-import shlex
 from financeai.artwork import info, dim, error, section
 
 from financeai.config import get_config
@@ -20,15 +19,12 @@ def ask_hermes(scrambled_query: str, unscramble: bool = True) -> str:
     section("Hermes AI")
 
     try:
-        # Build command — quote the query safely for the shell
-        cmd = f'{hermes} chat -q {shlex.quote(scrambled_query)}'
-
         if cfg.get("show_warnings", True):
             dim(f"Running: {hermes} chat -q \"{scrambled_query[:80]}{'...' if len(scrambled_query) > 80 else ''}\"")
 
+        # Use list args to avoid shell quoting issues on Windows
         result = subprocess.run(
-            cmd,
-            shell=True,
+            [hermes, "chat", "-q", scrambled_query],
             capture_output=True,
             text=True,
             timeout=300,  # 5 min timeout for Hermes
