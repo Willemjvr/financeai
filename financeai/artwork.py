@@ -49,6 +49,15 @@ if not sys.stdout.isatty():
 # ──────────────────────────────────────────
 
 BANNER = f"""
+{C.BRIGHT_YELLOW}                       ████████████
+{C.BRIGHT_YELLOW}                    ██████████████████
+{C.BRIGHT_YELLOW}                  ██████████████████████
+{C.BRIGHT_YELLOW}                  █████████     ██████████
+{C.BRIGHT_YELLOW}                  █████████     ██████████
+{C.BRIGHT_YELLOW}                  ██████████████████████
+{C.BRIGHT_YELLOW}                    ████████████████████
+{C.BRIGHT_YELLOW}                       ██████████████
+{C.RESET}
 {C.BRIGHT_MAGENTA}    ███████╗██╗███╗   ██╗ █████╗ ███╗   ██╗ ██████╗███████╗ █████╗ ██╗
 {C.BRIGHT_CYAN}    ██╔════╝██║████╗  ██║██╔══██╗████╗  ██║██╔════╝██╔════╝██╔══██╗██║
 {C.BRIGHT_MAGENTA}    █████╗  ██║██╔██╗ ██║███████║██╔██╗ ██║██║     █████╗  ███████║██║
@@ -56,9 +65,9 @@ BANNER = f"""
 {C.BRIGHT_MAGENTA}    ██║     ██║██║ ╚████║██║  ██║██║ ╚████║╚██████╗███████╗██║  ██║██║
 {C.BRIGHT_CYAN}    ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝
 {C.RESET}
-{C.BOLD}{C.WHITE}    Secure PII Scrambling  •  Hermes AI Bridge  •  Financial Data Protection{C.RESET}
-{C.DIM}    ─────────────────────────────────────────────────────────────{C.RESET}
-{C.DIM}    v0.1.0  |  {datetime.now().strftime('%Y-%m-%d')}{C.RESET}
+{C.BRIGHT_YELLOW}    ░░░░  Secure PII Scrambling  ░░░░  Hermes AI Bridge  ░░░░  Financial Data Protection  ░░░░{C.RESET}
+{C.DIM}    ─────────────────────────────────────────────────────────────────────────────────────{C.RESET}
+{C.BRIGHT_YELLOW}    ◆{C.RESET} {C.DIM}v0.1.0  |  {datetime.now().strftime('%Y-%m-%d')}{C.RESET}
 """
 
 INTERACTIVE_HEADER = f"""
