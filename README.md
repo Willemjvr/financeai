@@ -1,4 +1,5 @@
 # FINANCEAI
+note , This is pretty useless and doesnt work (when you ask it to look at csv files or pdfs ) heremes still looks at the real names and sends it to their server ,you will need to change all the names on the csv file itself if you want this to work , this was just to test hermes coding capibility without really thinking ,it basicly only works if you give the context yourself but you might aswell just scramble them yourself otherwise it just scrables the names ,hermes looks through your files and doesnt recognize anything , FLOP
 
 **Secure PII-scrambling CLI for financial data analysis with Hermes AI.**
 
